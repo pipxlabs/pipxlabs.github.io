@@ -1,0 +1,97 @@
+{
+    "siteTitle": "PipxLabs",
+    "siteDescription": "PipxLabs specializes in secure mobile development, robust security solutions, and full-stack web applications. Transform your ideas into secure, scalable digital experiences.",
+    "header": {
+        "services": "Services",
+        "about": "About",
+        "contact": "Contact",
+        "getStarted": "Get Started"
+    },
+    "hero": {
+        "titlePart1": "Secure Mobile",
+        "titlePart2": "Development",
+        "titlePart3": "That Scales",
+        "description": "We specialize in cutting-edge mobile development, robust security solutions, and full-stack web applications. Transform your ideas into secure, scalable digital experiences.",
+        "startProject": "Start Your Project",
+        "securityFocus": "Security Focus",
+        "support": "Support"
+    },
+    "servicesSection": {
+        "expertise": "Our Expertise",
+        "title": "Comprehensive Digital Solutions",
+        "description": "From mobile apps to full-stack web applications, we deliver secure, scalable solutions that drive your business forward.",
+        "card1": {
+            "title": "Mobile Development",
+            "description": "Native iOS & Android apps built with cutting-edge technologies and best practices.",
+            "features": [
+                "React Native & Flutter",
+                "Native iOS & Android",
+                "Cross-platform Solutions"
+            ]
+        },
+        "card2": {
+            "title": "Mobile Security",
+            "description": "Advanced security implementations to protect your mobile applications and user data.",
+            "features": [
+                "End-to-end Encryption",
+                "Security Audits"
+            ]
+        },
+        "card3": {
+            "title": "Full-Stack Web",
+            "description": "Complete web applications from frontend to backend, database, and deployment.",
+            "features": [
+                "React, Vue, Remix",
+                ".NET, Go Python",
+                "Cloud Deployment"
+            ]
+        }
+    },
+    "featuresSection": {
+        "whyChooseUs": "Why Choose Us",
+        "title": "Built for the Future of Digital",
+        "description": "As a fresh company with cutting-edge expertise, we bring innovative solutions without the legacy constraints of traditional agencies.",
+        "feature1": {
+            "title": "Lightning Fast Development",
+            "description": "Modern tools and agile methodologies for rapid delivery without compromising quality."
+        },
+        "feature2": {
+            "title": "Security First Approach",
+            "description": "Every line of code is written with security in mind, protecting your users and data."
+        },
+        "feature3": {
+            "title": "Dedicated Support",
+            "description": "Personal attention and ongoing support to ensure your project's success."
+        }
+    },
+    "aboutSection": {
+        "ourStory": "Our Story",
+        "title": "Fresh Perspective, Proven Expertise",
+        "description": "Founded by a team of seasoned developers and security experts, we bring together years of industry experience with a fresh, innovative approach. Our mission is to deliver secure, scalable digital solutions that help businesses thrive in the mobile-first world.",
+        "globalReach": "Global Reach",
+        "globalReachDescription": "Serving clients worldwide with 24/7 support",
+        "qualityFirst": "Quality First",
+        "qualityFirstDescription": "Rigorous testing and quality assurance",
+        "innovation": "Innovation",
+        "innovationDescription": "Cutting-edge technologies and methodologies"
+    },
+    "ctaSection": {
+        "title": "Ready to Build Something Amazing?",
+        "description": "Let's discuss your project and create a secure, scalable solution that exceeds your expectations.",
+        "placeholder": "Enter your email",
+        "button": "Get Started Today",
+        "disclaimer": "Free consultation • No commitment required • Response within 24 hours"
+    },
+    "footer": {
+        "description": "Secure mobile development and full-stack solutions for the modern world.",
+        "services": "Services",
+        "mobileDev": "Mobile Development",
+        "mobileSecurity": "Mobile Security",
+        "fullStackWeb": "Full-Stack Web",
+        "consulting": "Consulting",
+        "company": "Company",
+        "aboutUs": "About Us",
+        "contact": "Contact",
+        "copyright": "All rights reserved."
+    }
+}

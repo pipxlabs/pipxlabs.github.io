@@ -1,0 +1,97 @@
+{
+    "siteTitle": "PipxLabs",
+    "siteDescription": "PipxLabs se especializa en desarrollo móvil seguro, soluciones de seguridad robustas y aplicaciones web full-stack. Transformamos sus ideas en experiencias digitales seguras y escalables.",
+    "header": {
+        "services": "Servicios",
+        "about": "Acerca de",
+        "contact": "Contacto",
+        "getStarted": "Empezar"
+    },
+    "hero": {
+        "titlePart1": "Desarrollo Móvil",
+        "titlePart2": "Seguro",
+        "titlePart3": "Que Escala",
+        "description": "Nos especializamos en desarrollo móvil de vanguardia, soluciones de seguridad robustas y aplicaciones web full-stack. Transformamos sus ideas en experiencias digitales seguras y escalables.",
+        "startProject": "Iniciar Tu Proyecto",
+        "securityFocus": "Enfoque en Seguridad",
+        "support": "Soporte"
+    },
+    "servicesSection": {
+        "expertise": "Nuestra Experiencia",
+        "title": "Soluciones Digitales Integrales",
+        "description": "Desde aplicaciones móviles hasta aplicaciones web full-stack, ofrecemos soluciones seguras y escalables que impulsan su negocio.",
+        "card1": {
+            "title": "Desarrollo Móvil",
+            "description": "Aplicaciones nativas iOS y Android creadas con tecnologías de vanguardia y mejores prácticas.",
+            "features": [
+                "React Native y Flutter",
+                "iOS y Android Nativos",
+                "Soluciones Multiplataforma"
+            ]
+        },
+        "card2": {
+            "title": "Seguridad Móvil",
+            "description": "Implementaciones de seguridad avanzadas para proteger sus aplicaciones móviles y datos de usuario.",
+            "features": [
+                "Cifrado de Extremo a Extremo",
+                "Auditorías de Seguridad"
+            ]
+        },
+        "card3": {
+            "title": "Web Full-Stack",
+            "description": "Aplicaciones web completas desde el frontend hasta el backend, base de datos e implementación.",
+            "features": [
+                "React, Vue, Remix",
+                ".NET, Go Python",
+                "Despliegue en la Nube"
+            ]
+        }
+    },
+    "featuresSection": {
+        "whyChooseUs": "Por Qué Elegirnos",
+        "title": "Construido para el Futuro Digital",
+        "description": "Como una empresa fresca con experiencia de vanguardia, ofrecemos soluciones innovadoras sin las restricciones de las agencias tradicionales.",
+        "feature1": {
+            "title": "Desarrollo Rápido",
+            "description": "Herramientas modernas y metodologías ágiles para una entrega rápida sin comprometer la calidad."
+        },
+        "feature2": {
+            "title": "Enfoque Primero en Seguridad",
+            "description": "Cada línea de código se escribe pensando en la seguridad, protegiendo a sus usuarios y datos."
+        },
+        "feature3": {
+            "title": "Soporte Dedicado",
+            "description": "Atención personalizada y soporte continuo para asegurar el éxito de su proyecto."
+        }
+    },
+    "aboutSection": {
+        "ourStory": "Nuestra Historia",
+        "title": "Perspectiva Fresca, Experiencia Comprobada",
+        "description": "Fundada por un equipo de desarrolladores y expertos en seguridad experimentados, unimos años de experiencia en la industria con un enfoque fresco e innovador. Nuestra misión es ofrecer soluciones digitales seguras y escalables que ayuden a las empresas a prosperar en el mundo móvil.",
+        "globalReach": "Alcance Global",
+        "globalReachDescription": "Sirviendo a clientes en todo el mundo con soporte 24/7",
+        "qualityFirst": "Calidad Primero",
+        "qualityFirstDescription": "Pruebas rigurosas y garantía de calidad",
+        "innovation": "Innovación",
+        "innovationDescription": "Tecnologías y metodologías de vanguardia"
+    },
+    "ctaSection": {
+        "title": "¿Listo para Construir Algo Asombroso?",
+        "description": "Hablemos de su proyecto y creemos una solución segura y escalable que supere sus expectativas.",
+        "placeholder": "Ingrese su correo electrónico",
+        "button": "Comenzar Hoy",
+        "disclaimer": "Consulta gratuita • Sin compromiso • Respuesta en 24 horas"
+    },
+    "footer": {
+        "description": "Desarrollo móvil seguro y soluciones full-stack para el mundo moderno.",
+        "services": "Servicios",
+        "mobileDev": "Desarrollo Móvil",
+        "mobileSecurity": "Seguridad Móvil",
+        "fullStackWeb": "Web Full-Stack",
+        "consulting": "Consultoría",
+        "company": "Empresa",
+        "aboutUs": "Acerca de Nosotros",
+        "contact": "Contacto",
+        "copyright": "Todos los derechos reservados."
+    }
+}
