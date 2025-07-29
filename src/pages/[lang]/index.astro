@@ -13,6 +13,8 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const content = lang === "en" ? en : es;
 const year = new Date().getFullYear();
+
+const WEB3FORMS_ACCESS_KEY = "d3c8e7ce-cdb0-47f4-b3de-1eb7212bb54e";
 ---
 
 <!DOCTYPE html>
@@ -282,18 +284,26 @@ const year = new Date().getFullYear();
         <p class="text-xl opacity-90">
           {content.ctaSection.description}
         </p>
-        <form class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <input
-            type="email"
-            placeholder={content.ctaSection.placeholder}
-            class="max-w-sm px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/70 rounded-md"
-            aria-label="Email address"
-            required
-          />
-          <button type="submit" class="px-8 py-3 bg-white text-purple-600 hover:bg-gray-100 rounded-md font-medium transition-all" aria-label="Get Started Today">
-            {content.ctaSection.button}
-          </button>
+        <form id="contactForm" method="POST" class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY}>
+            <input type="hidden" name="subject" value="New Contact Form Submission from Pixplabs">
+
+            <input
+              type="email"
+              name="email"
+              placeholder={content.ctaSection.placeholder}
+              class="max-w-sm px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/70 rounded-md"
+              aria-label="Email address"
+              required
+            />
+
+            <button type="submit" class="px-8 py-3 bg-white text-purple-600 hover:bg-gray-100 rounded-md font-medium transition-all" aria-label="Get Started Today">
+              {content.ctaSection.button}
+            </button>
         </form>
+
+        <div id="formMessage" class="text-lg mt-4" role="status" aria-live="polite"></div>
+
         <p class="text-sm opacity-75">{content.ctaSection.disclaimer}</p>
       </div>
     </div>
@@ -342,5 +352,8 @@ const year = new Date().getFullYear();
       </div>
     </div>
   </footer>
+
+  <script src="../../form.js" defer></script>
+  </script>
 </body>
 </html>
