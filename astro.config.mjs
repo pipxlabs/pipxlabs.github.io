@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://pipxlabs.github.io',
+  site: 'https://pipxlabs.com',
   build: {
     // @ts-ignore
     outDir: './docs',
