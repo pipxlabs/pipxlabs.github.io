@@ -1,46 +1,30 @@
-const form = document.getElementById('contactForm');
-const formMessage = document.getElementById('formMessage');
+var form = document.getElementById("my-form");
 
-if (form && formMessage) {
-    form.addEventListener('submit', async (event) => {
-        event.preventDefault();
-
-        formMessage.textContent = 'Sending...';
-        formMessage.classList.remove('text-green-400', 'text-red-400'); // Clear previous styles
-        formMessage.classList.add('text-white');
-
-        const formData = new FormData(form);
-        const object = Object.fromEntries(formData.entries());
-        const json = JSON.stringify(object);
-
-        try {
-            const response = await fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: json
-            });
-
-            const result = await response.json();
-
-            if (result.success) {
-                formMessage.textContent = 'Message sent successfully!';
-                formMessage.classList.remove('text-white');
-                formMessage.classList.add('text-green-400');
-                form.reset();
-            } else {
-                console.error('Web3Forms Error:', result);
-                formMessage.textContent = result.message || 'Failed to send message. Please try again.';
-                formMessage.classList.remove('text-white');
-                formMessage.classList.add('text-red-400');
-            }
-        } catch (error) {
-            console.error('Submission Error:', error);
-            formMessage.textContent = 'An error occurred. Please try again later.';
-            formMessage.classList.remove('text-white');
-            formMessage.classList.add('text-red-400');
+async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
         }
+    }).then(response => {
+        if (response.ok) {
+            status.innerHTML = "Thanks for your submission!";
+            form.reset();
+        } else {
+            response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                } else {
+                    status.innerHTML = "Oops! There was a problem submitting your form";
+                }
+            });
+        }
+    }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form";
     });
 }
+form.addEventListener("submit", handleSubmit);
