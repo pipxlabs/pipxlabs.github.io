@@ -44,35 +44,38 @@ const WEB3FORMS_ACCESS_KEY = 'd3c8e7ce-cdb0-47f4-b3de-1eb7212bb54e';
             {content.siteTitle}
           </span>
         </div>
-        <nav class='hidden md:flex items-center space-x-8'>
-          <a
-            href={`/${lang}/#services`}
-            class='text-sm font-medium hover:text-purple-600 transition-colors'
-            >{content.header.services}</a
-          >
-          <a
-            href={`/${lang}/#about`}
-            class='text-sm font-medium hover:text-purple-600 transition-colors'
-            >{content.header.about}</a
-          >
-          <a
-            href={`/${lang}/#contact`}
-            class='text-sm font-medium hover:text-purple-600 transition-colors'
-            >{content.header.contact}</a
-          >
-          <a
-            href={`/${lang}/#contact`}
-            class='px-4 py-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-md font-medium transition-all'
-          >
-            {content.header.getStarted}
-          </a>
+        <div class='flex items-center'>
+          <nav class='hidden md:flex items-center space-x-8'>
+            <a
+              href={`/${lang}/#services`}
+              class='text-sm font-medium hover:text-purple-600 transition-colors'
+              >{content.header.services}</a
+            >
+            <a
+              href={`/${lang}/#about`}
+              class='text-sm font-medium hover:text-purple-600 transition-colors'
+              >{content.header.about}</a
+            >
+            <a
+              href={`/${lang}/#contact`}
+              class='text-sm font-medium hover:text-purple-600 transition-colors'
+              >{content.header.contact}</a
+            >
+            <a
+              href={`/${lang}/#contact`}
+              class='px-4 py-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-md font-medium transition-all'
+            >
+              {content.header.getStarted}
+            </a>
+          </nav>
+
           <a
             href={lang === 'en' ? '/es/' : '/en/'}
-            class='text-sm font-medium hover:text-purple-600 transition-colors border px-2 py-1 rounded'
+            class='text-sm ml-4 font-medium hover:text-purple-600 transition-colors border px-2 py-1 rounded'
           >
             {lang === 'en' ? 'Español' : 'English'}
           </a>
-        </nav>
+        </div>
       </div>
     </header>
 
@@ -545,7 +548,7 @@ const WEB3FORMS_ACCESS_KEY = 'd3c8e7ce-cdb0-47f4-b3de-1eb7212bb54e';
 
     <footer class='bg-gray-900 text-white py-12'>
       <div class='container mx-auto px-4'>
-        <div class='grid md:grid-cols-3 gap-8'>
+        <div class='grid md:grid-cols-2 gap-8'>
           <div class='space-y-4'>
             <div class='flex items-center space-x-2'>
               <div
@@ -555,7 +558,7 @@ const WEB3FORMS_ACCESS_KEY = 'd3c8e7ce-cdb0-47f4-b3de-1eb7212bb54e';
               </div>
               <span class='text-xl font-bold'>{content.siteTitle}</span>
             </div>
-            <p class='text-gray-400'>{content.footer.description}</p>
+            <p class='text-gray-400 w-1/2'>{content.footer.description}</p>
           </div>
           <div>
             <h4 class='font-semibold mb-4'>{content.footer.services}</h4>
@@ -566,7 +569,7 @@ const WEB3FORMS_ACCESS_KEY = 'd3c8e7ce-cdb0-47f4-b3de-1eb7212bb54e';
               <li>{content.footer.consulting}</li>
             </ul>
           </div>
-          <div>
+          <div class='hidden'>
             <h4 class='font-semibold mb-4'>{content.footer.company}</h4>
             <ul class='space-y-2 text-gray-400'>
               <li>{content.footer.aboutUs}</li>
